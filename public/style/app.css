@@ -1,13 +1,12 @@
 /* app.css */
 
-/* Réinitialisation globale */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corps du document */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -15,7 +14,6 @@ body {
     line-height: 1.6;
 }
 
-/* Conteneur générique pour centraliser le contenu */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -58,7 +56,6 @@ header nav ul li a:hover {
     color: #ff6600;
 }
 
-/* Sections principales */
 main {
     padding: 40px 0;
 }
@@ -95,7 +92,6 @@ footer p {
     font-size: 1em;
 }
 
-/* Styles réactifs pour les petits écrans */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.2em;
