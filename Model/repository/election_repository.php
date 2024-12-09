@@ -1,7 +1,8 @@
 <?php
 
-namespace repository;
-use entite\election;
+namespace Model\repository;
+use Model\entite\election;
+use repository\PDO;
 
 class election_repository
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace repository;
+namespace Model\repository;
 
+use Model\entite\groupe;
 use PDO;
-use entite\groupe;
 
 class group_repository
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace entite;
+namespace Model\entite;
 
 class vote
 {

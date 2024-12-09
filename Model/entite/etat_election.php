@@ -1,8 +1,8 @@
 <?php
 
-namespace entite;
+namespace Model\entite;
 
-class groupe
+class etat_election
 {
     private $idEtat;
     private $nomEtat;

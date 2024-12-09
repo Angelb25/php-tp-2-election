@@ -1,9 +1,9 @@
 <?php
 
-namespace repository;
+namespace Model\repository;
 
+use Model\entite\utilisateur;
 use PDO;
-use entite\utilisateur;
 
 class utilisateur_repository
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace repository;
+namespace Model\repository;
 
 use PDO;
-use entite\etat_election;
+use repository\EtatElection;
 
 class etat_election_repository
 {

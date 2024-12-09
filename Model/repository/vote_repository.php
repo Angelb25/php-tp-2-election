@@ -1,9 +1,9 @@
 <?php
 
-namespace repository;
+namespace Model\repository;
 
+use Model\entite\vote;
 use PDO;
-use entite\vote;
 
 class vote_repository
 {
