@@ -1,25 +1,27 @@
-<?php include('template/include/head.php'); ?>
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Élection des délégués</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Chemin vers votre CSS -->
+</head>
 <body>
-<?php include('template/include/header.php'); ?>
+    <h1>Bienvenue à l'élection des délégués</h1>
+    <p>Choisissez un groupe pour commencer :</p>
 
-<main>
-    <section id="candidates">
-        <h2>Candidats</h2>
-        <p>Liste des candidats...</p>
-    </section>
-
-    <section id="vote">
-        <h2>Voter</h2>
-        <p>Instructions pour voter...</p>
-    </section>
-
-    <section id="results">
-        <h2>Résultats</h2>
-        <p>Les résultats seront affichés ici...</p>
-    </section>
-</main>
-
-<?php include('template/include/footer.php'); ?>
+    <ul>
+        <?php if (!empty($groups)): ?>
+            <?php foreach ($groups as $group): ?>
+                <li>
+                    Groupe: <?= htmlspecialchars($group['name']) ?>
+                    <a href="/vote/first-round/<?= $group['id'] ?>">Voter</a>
+                    <a href="/results/<?= $group['id'] ?>">Voir les résultats</a>
+                </li>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>Aucun groupe disponible pour l'instant.</p>
+        <?php endif; ?>
+    </ul>
 </body>
 </html>

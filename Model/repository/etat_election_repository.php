@@ -16,7 +16,7 @@ class etat_election_repository
 
     public function create(EtatElection $etatElection): bool
     {
-        $sql = "INSERT INTO etats_election (nomEtat) VALUES (:nomEtat)";
+        $sql = "INSERT INTO etat_election (nomEtat) VALUES (:nomEtat)";
         $stmt = $this->pdo->prepare($sql);
 
         return $stmt->execute([
