@@ -1,8 +1,9 @@
 {
-    "name": "vendor/name",
     "autoload": {
         "psr-4": {
-            "Vendor\\Name\\": "src/"
+            "Model\\": "src/Model/",
+            "Controller\\": "src/Controller/",
+            "src\\": "src/"
         }
     },
     "require": {}
