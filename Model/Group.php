@@ -1,19 +1,15 @@
 <?php
-namespace Models;
+
+namespace Model;
 
 use src\connexion_PDO;
 
 class Group
 {
-public static function getAll()
-{
-try {
-$db = c::getConnection();
-$query = $db->query('SELECT * FROM groupe');
-return $query->fetchAll();
-} catch (Exception $e) {
-die('Erreur : ' . $e->getMessage());
+    public static function getAll()
+    {
+        $db = connexion_PDO::getConnection();
+        $query = $db->query('SELECT * FROM groupe');
+        return $query->fetchAll();
+    }
 }
-}
-}
-?>

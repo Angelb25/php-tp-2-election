@@ -1,3 +1,13 @@
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+// Inclure votre autoloader pour charger les classes
+
+use Controller\HomeController;
+
+$controller = new HomeController();
+$controller->index();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,8 +32,6 @@
     <ul>
         <?php if (!empty($groups)): ?>
             <?php foreach ($groups as $group): ?>
-
-
                 <li>
                     Groupe: <?= htmlspecialchars($group['name']) ?>
                     <a href="/View/first-round/<?= $group['id'] ?>">Voter</a>
